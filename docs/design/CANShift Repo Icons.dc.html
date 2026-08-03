@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: #f3f2f2; }
+  * { box-sizing: border-box; }
+  a { color: #ec3013; text-underline-offset: 3px; }
+  a:hover { color: #ae1800; }
+</style>
+</helmet>
+
+<div style="font-family: 'Archivo', system-ui, sans-serif; color: #201e1d; background: #f3f2f2; min-height: 100vh">
+
+  <header style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 64px clamp(24px, 5vw, 72px) 34px; border-bottom: 2px solid #201e1d">
+    <div>
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px">
+        <div style="height: 8px; width: 76px; background: repeating-linear-gradient(90deg, #ec3013 0 4px, transparent 4px 8px)"></div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #ec3013">REPOSITORY ICONS</div>
+      </div>
+      <h1 style="margin: 0 0 14px; font-size: clamp(40px, 5.4vw, 72px); font-weight: 800; line-height: 0.94; letter-spacing: -0.04em; max-width: 16ch">One mark per repo, built on the CS grid.</h1>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #605d5d; max-width: 58ch; text-wrap: pretty">Same construction as the monogram — 116 × 100 frame, 11° shear, one red element per mark. Three stroke weights only: 13 u for signal, 7 u for rules and frames, 18 u for handles — 15 and 22 u at small sizes. Five repos under the CANShift org.</p>
+    </div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.9; color: #605d5d">
+      <div>STROKES<span style="color: #201e1d"> 13 · 7 · 18 u</span></div>
+      <div>SMALL<span style="color: #201e1d"> 15 · 22 u</span></div>
+      <div>SHEAR<span style="color: #201e1d"> 11°</span></div>
+      <div>ACCENT<span style="color: #201e1d"> #EC3013 / #FF4747</span></div>
+    </div>
+  </header>
+
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); background: #f3f2f2; border-bottom: 2px solid #201e1d">
+
+    <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column">
+      <div style="display: grid; place-items: center; padding: 48px 24px; background: #eae9e9">
+        <svg viewBox="0 0 116 100" style="width: 132px" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none" stroke-linecap="butt"> <path d="M18 64 H44 V32 H70" stroke="#201e1d" stroke-width="13"/> <path d="M70 32 V64 H96" stroke="#ec3013" stroke-width="13"/> <path d="M18 88 H100" stroke="#201e1d" stroke-width="7"/> </g></svg>
+      </div>
+      <div style="padding: 26px 26px 30px; display: flex; flex-direction: column; gap: 8px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13.5px; font-weight: 700">canshift-firmware</div>
+        <div style="font-size: 14.5px; line-height: 1.55; color: #605d5d">A bit on the wire, sampled: one recessive level, one dominant, the base line under it. The red half is the edge the firmware acts on.</div>
+      </div>
+    </div>
+
+    <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column">
+      <div style="display: grid; place-items: center; padding: 48px 24px; background: #eae9e9">
+        <svg viewBox="0 0 116 100" style="width: 132px" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M18 30 H102 V70 H18 Z" stroke="#201e1d" stroke-width="7"/> <path d="M44 30 V70 M62 30 V70" stroke="#201e1d" stroke-width="7"/> <path d="M76 52 H88" stroke="#ec3013" stroke-width="13"/> </g></svg>
+      </div>
+      <div style="padding: 26px 26px 30px; display: flex; flex-direction: column; gap: 8px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13.5px; font-weight: 700">canshift-core</div>
+        <div style="font-size: 14.5px; line-height: 1.55; color: #605d5d">A CAN frame cut into its fields — ID, DLC, data. The red bar sits in the last one: what the parser hands back as a decoded signal.</div>
+      </div>
+    </div>
+
+    <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column">
+      <div style="display: grid; place-items: center; padding: 48px 24px; background: #eae9e9">
+        <svg viewBox="0 0 116 100" style="width: 132px" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M30 26 H94 V78 H30 Z" stroke="#201e1d" stroke-width="7" stroke-dasharray="18 12"/> <path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#201e1d" stroke-width="18" stroke-linecap="square"/> <path d="M94 78 h0" stroke="#ec3013" stroke-width="18" stroke-linecap="square"/> </g></svg>
+      </div>
+      <div style="padding: 26px 26px 30px; display: flex; flex-direction: column; gap: 8px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13.5px; font-weight: 700">canshift-tuner</div>
+        <div style="font-size: 14.5px; line-height: 1.55; color: #605d5d">A widget selected on the canvas: dashed bounds, four corner handles, one grabbed. What you actually see when you place a gauge.</div>
+      </div>
+    </div>
+
+    <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column">
+      <div style="display: grid; place-items: center; padding: 48px 24px; background: #eae9e9">
+        <svg viewBox="0 0 116 100" style="width: 132px" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M26 78 V64" stroke="#201e1d" stroke-width="13"/> <path d="M48 78 V52" stroke="#201e1d" stroke-width="13"/> <path d="M70 78 V38" stroke="#201e1d" stroke-width="13"/> <path d="M92 78 V24" stroke="#ec3013" stroke-width="13"/> <path d="M18 90 H100" stroke="#201e1d" stroke-width="7"/> </g></svg>
+      </div>
+      <div style="padding: 26px 26px 30px; display: flex; flex-direction: column; gap: 8px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13.5px; font-weight: 700">canshift-mobile</div>
+        <div style="font-size: 14.5px; line-height: 1.55; color: #605d5d">Received signal strength, four bars climbing, the paired one in red — the BLE link the app lives on. iOS and Android, one mark.</div>
+      </div>
+    </div>
+
+    <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column">
+      <div style="display: grid; place-items: center; padding: 48px 24px; background: #eae9e9">
+        <svg viewBox="0 0 116 100" style="width: 132px" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M22 18 H98 V86 H22 Z" stroke="#201e1d" stroke-width="7"/> <path d="M58 62 H98" stroke="#201e1d" stroke-width="7"/> <path d="M58 62 V86" stroke="#201e1d" stroke-width="7"/> <path d="M70 74 H86" stroke="#ec3013" stroke-width="13"/> </g></svg>
+      </div>
+      <div style="padding: 26px 26px 30px; display: flex; flex-direction: column; gap: 8px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13.5px; font-weight: 700">canshift-docs</div>
+        <div style="font-size: 14.5px; line-height: 1.55; color: #605d5d">A drawing sheet with its title block, the way the reference pages are laid out. The red rule is the revision line.</div>
+      </div>
+    </div>
+    <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; justify-content: center; padding: 40px 30px; gap: 14px">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #7d7979">THE FAMILY RULE</div>
+      <div style="font-size: 17px; line-height: 1.5; font-weight: 700; max-width: 22ch">Exactly one red element per mark, and it always names what the repo does.</div>
+      <div style="font-size: 14px; line-height: 1.55; color: #605d5d">Never two accents, never a red outline. Below 24 px only the primary strokes survive. On dark grounds the accent becomes #FF4747, like the dash.</div>
+    </div>
+  </section>
+
+  <section style="border-bottom: 2px solid #201e1d">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding: 38px clamp(24px, 5vw, 72px) 30px; border-bottom: 1px solid rgba(32,30,29,0.16)">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase">At interface sizes</h2>
+      <span style="font-size: 13px; color: #605d5d">64 · 40 · 24 · 16 px — below 24 the shear is dropped, weights step up to 15 u and the secondary rules are cut.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); background: #f3f2f2">
+
+      <div style="background: #f3f2f2; padding: 34px 26px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; min-height: 68px">
+          <svg viewBox="0 0 116 100" style="width: 64px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none" stroke-linecap="butt"> <path d="M18 64 H44 V32 H70" stroke="#201e1d" stroke-width="13"/> <path d="M70 32 V64 H96" stroke="#ec3013" stroke-width="13"/> <path d="M18 88 H100" stroke="#201e1d" stroke-width="7"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 40px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none" stroke-linecap="butt"> <path d="M18 64 H44 V32 H70" stroke="#201e1d" stroke-width="13"/> <path d="M70 32 V64 H96" stroke="#ec3013" stroke-width="13"/> <path d="M18 88 H100" stroke="#201e1d" stroke-width="7"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 24px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M14 68 H46 V30 H62" stroke="#201e1d" stroke-width="15"/> <path d="M62 30 V68 H100" stroke="#ec3013" stroke-width="15"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 16px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M14 68 H46 V30 H62" stroke="#201e1d" stroke-width="15"/> <path d="M62 30 V68 H100" stroke="#ec3013" stroke-width="15"/> </g></svg>
+        </div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #605d5d">firmware</div>
+      </div>
+
+      <div style="background: #f3f2f2; padding: 34px 26px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; min-height: 68px">
+          <svg viewBox="0 0 116 100" style="width: 64px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M18 30 H102 V70 H18 Z" stroke="#201e1d" stroke-width="7"/> <path d="M44 30 V70 M62 30 V70" stroke="#201e1d" stroke-width="7"/> <path d="M76 52 H88" stroke="#ec3013" stroke-width="13"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 40px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M18 30 H102 V70 H18 Z" stroke="#201e1d" stroke-width="7"/> <path d="M44 30 V70 M62 30 V70" stroke="#201e1d" stroke-width="7"/> <path d="M76 52 H88" stroke="#ec3013" stroke-width="13"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 24px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M16 28 H100 V72 H16 Z" stroke="#201e1d" stroke-width="15"/> <path d="M68 50 H82" stroke="#ec3013" stroke-width="15"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 16px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M16 28 H100 V72 H16 Z" stroke="#201e1d" stroke-width="15"/> <path d="M68 50 H82" stroke="#ec3013" stroke-width="15"/> </g></svg>
+        </div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #605d5d">core</div>
+      </div>
+
+      <div style="background: #f3f2f2; padding: 34px 26px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; min-height: 68px">
+          <svg viewBox="0 0 116 100" style="width: 64px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M30 26 H94 V78 H30 Z" stroke="#201e1d" stroke-width="7" stroke-dasharray="18 12"/> <path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#201e1d" stroke-width="18" stroke-linecap="square"/> <path d="M94 78 h0" stroke="#ec3013" stroke-width="18" stroke-linecap="square"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 40px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M30 26 H94 V78 H30 Z" stroke="#201e1d" stroke-width="7" stroke-dasharray="18 12"/> <path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#201e1d" stroke-width="18" stroke-linecap="square"/> <path d="M94 78 h0" stroke="#ec3013" stroke-width="18" stroke-linecap="square"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 24px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M26 24 H94 V80 H26 Z" stroke="#201e1d" stroke-width="15"/> <path d="M26 24 h0 M94 24 h0 M26 80 h0" stroke="#201e1d" stroke-width="22" stroke-linecap="square"/> <path d="M94 80 h0" stroke="#ec3013" stroke-width="22" stroke-linecap="square"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 16px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M26 24 H94 V80 H26 Z" stroke="#201e1d" stroke-width="15"/> <path d="M26 24 h0 M94 24 h0 M26 80 h0" stroke="#201e1d" stroke-width="22" stroke-linecap="square"/> <path d="M94 80 h0" stroke="#ec3013" stroke-width="22" stroke-linecap="square"/> </g></svg>
+        </div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #605d5d">tuner</div>
+      </div>
+
+      <div style="background: #f3f2f2; padding: 34px 26px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; min-height: 68px">
+          <svg viewBox="0 0 116 100" style="width: 64px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M26 78 V64" stroke="#201e1d" stroke-width="13"/> <path d="M48 78 V52" stroke="#201e1d" stroke-width="13"/> <path d="M70 78 V38" stroke="#201e1d" stroke-width="13"/> <path d="M92 78 V24" stroke="#ec3013" stroke-width="13"/> <path d="M18 90 H100" stroke="#201e1d" stroke-width="7"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 40px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M26 78 V64" stroke="#201e1d" stroke-width="13"/> <path d="M48 78 V52" stroke="#201e1d" stroke-width="13"/> <path d="M70 78 V38" stroke="#201e1d" stroke-width="13"/> <path d="M92 78 V24" stroke="#ec3013" stroke-width="13"/> <path d="M18 90 H100" stroke="#201e1d" stroke-width="7"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 24px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M24 82 V60" stroke="#201e1d" stroke-width="15"/> <path d="M52 82 V42" stroke="#201e1d" stroke-width="15"/> <path d="M80 82 V22" stroke="#ec3013" stroke-width="15"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 16px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M24 82 V60" stroke="#201e1d" stroke-width="15"/> <path d="M52 82 V42" stroke="#201e1d" stroke-width="15"/> <path d="M80 82 V22" stroke="#ec3013" stroke-width="15"/> </g></svg>
+        </div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #605d5d">mobile</div>
+      </div>
+
+      <div style="background: #f3f2f2; padding: 34px 26px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; min-height: 68px">
+          <svg viewBox="0 0 116 100" style="width: 64px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M22 18 H98 V86 H22 Z" stroke="#201e1d" stroke-width="7"/> <path d="M58 62 H98" stroke="#201e1d" stroke-width="7"/> <path d="M58 62 V86" stroke="#201e1d" stroke-width="7"/> <path d="M70 74 H86" stroke="#ec3013" stroke-width="13"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 40px; flex: none" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M22 18 H98 V86 H22 Z" stroke="#201e1d" stroke-width="7"/> <path d="M58 62 H98" stroke="#201e1d" stroke-width="7"/> <path d="M58 62 V86" stroke="#201e1d" stroke-width="7"/> <path d="M70 74 H86" stroke="#ec3013" stroke-width="13"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 24px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M18 18 H98 V84 H18 Z" stroke="#201e1d" stroke-width="15"/> <path d="M58 60 H82" stroke="#ec3013" stroke-width="15"/> </g></svg>
+          <svg viewBox="0 0 116 100" style="width: 16px; flex: none" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M18 18 H98 V84 H18 Z" stroke="#201e1d" stroke-width="15"/> <path d="M58 60 H82" stroke="#ec3013" stroke-width="15"/> </g></svg>
+        </div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #605d5d">docs</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-bottom: 2px solid #201e1d">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding: 38px clamp(24px, 5vw, 72px) 30px; border-bottom: 1px solid rgba(32,30,29,0.16)">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase">Light and dark</h2>
+      <span style="font-size: 13px; color: #605d5d">Every ground the marks land on. The accent switches at the ground, never the ink.</span>
+    </div>
+    <div style="overflow-x: auto">
+      <div style="min-width: 720px; display: grid; grid-template-columns: 132px repeat(5, minmax(0, 1fr)); background: #f3f2f2">
+        <div style="background: #f3f2f2; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16)"></div>
+          <div style="background: #f3f2f2; padding: 16px 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #ec3013">PAGE</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #7d7979">#F3F2F2</span></div>
+          <div style="background: #f3f2f2; padding: 16px 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #ec3013">PANEL</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #7d7979">#EAE9E9</span></div>
+          <div style="background: #f3f2f2; padding: 16px 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #ec3013">INK</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #7d7979">#151313</span></div>
+          <div style="background: #f3f2f2; padding: 16px 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #ec3013">DASH</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #7d7979">#1A1A19</span></div>
+          <div style="background: #f3f2f2; padding: 16px 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #ec3013">ACCENT</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #7d7979">#EC3013</span></div>
+        <div style="display: contents">
+          <div style="background: #f3f2f2; display: flex; align-items: center; padding: 0 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 700">firmware</div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #f3f2f2; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 64 H44 V32 H70" stroke="#201e1d" stroke-width="13"/><path d="M70 32 V64 H96" stroke="#ec3013" stroke-width="13"/><path d="M18 88 H100" stroke="#201e1d" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #eae9e9; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 64 H44 V32 H70" stroke="#201e1d" stroke-width="13"/><path d="M70 32 V64 H96" stroke="#ec3013" stroke-width="13"/><path d="M18 88 H100" stroke="#201e1d" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #151313; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 64 H44 V32 H70" stroke="#f3f2f2" stroke-width="13"/><path d="M70 32 V64 H96" stroke="#ff4747" stroke-width="13"/><path d="M18 88 H100" stroke="#f3f2f2" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #1a1a19; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 64 H44 V32 H70" stroke="#f3f2f2" stroke-width="13"/><path d="M70 32 V64 H96" stroke="#ff4747" stroke-width="13"/><path d="M18 88 H100" stroke="#f3f2f2" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #ec3013; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 64 H44 V32 H70" stroke="#ffffff" stroke-width="13"/><path d="M70 32 V64 H96" stroke="#ffffff" stroke-width="13"/><path d="M18 88 H100" stroke="#ffffff" stroke-width="7"/></g></svg></div></div>
+        </div>
+        <div style="display: contents">
+          <div style="background: #f3f2f2; display: flex; align-items: center; padding: 0 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 700">core</div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #f3f2f2; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 30 H102 V70 H18 Z" stroke="#201e1d" stroke-width="7"/><path d="M44 30 V70 M62 30 V70" stroke="#201e1d" stroke-width="7"/><path d="M76 52 H88" stroke="#ec3013" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #eae9e9; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 30 H102 V70 H18 Z" stroke="#201e1d" stroke-width="7"/><path d="M44 30 V70 M62 30 V70" stroke="#201e1d" stroke-width="7"/><path d="M76 52 H88" stroke="#ec3013" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #151313; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 30 H102 V70 H18 Z" stroke="#f3f2f2" stroke-width="7"/><path d="M44 30 V70 M62 30 V70" stroke="#f3f2f2" stroke-width="7"/><path d="M76 52 H88" stroke="#ff4747" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #1a1a19; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 30 H102 V70 H18 Z" stroke="#f3f2f2" stroke-width="7"/><path d="M44 30 V70 M62 30 V70" stroke="#f3f2f2" stroke-width="7"/><path d="M76 52 H88" stroke="#ff4747" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #ec3013; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M18 30 H102 V70 H18 Z" stroke="#ffffff" stroke-width="7"/><path d="M44 30 V70 M62 30 V70" stroke="#ffffff" stroke-width="7"/><path d="M76 52 H88" stroke="#ffffff" stroke-width="13"/></g></svg></div></div>
+        </div>
+        <div style="display: contents">
+          <div style="background: #f3f2f2; display: flex; align-items: center; padding: 0 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 700">tuner</div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #f3f2f2; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M30 26 H94 V78 H30 Z" stroke="#201e1d" stroke-width="7" stroke-dasharray="18 12"/><path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#201e1d" stroke-width="18" stroke-linecap="square"/><path d="M94 78 h0" stroke="#ec3013" stroke-width="18" stroke-linecap="square"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #eae9e9; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M30 26 H94 V78 H30 Z" stroke="#201e1d" stroke-width="7" stroke-dasharray="18 12"/><path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#201e1d" stroke-width="18" stroke-linecap="square"/><path d="M94 78 h0" stroke="#ec3013" stroke-width="18" stroke-linecap="square"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #151313; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M30 26 H94 V78 H30 Z" stroke="#f3f2f2" stroke-width="7" stroke-dasharray="18 12"/><path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#f3f2f2" stroke-width="18" stroke-linecap="square"/><path d="M94 78 h0" stroke="#ff4747" stroke-width="18" stroke-linecap="square"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #1a1a19; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M30 26 H94 V78 H30 Z" stroke="#f3f2f2" stroke-width="7" stroke-dasharray="18 12"/><path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#f3f2f2" stroke-width="18" stroke-linecap="square"/><path d="M94 78 h0" stroke="#ff4747" stroke-width="18" stroke-linecap="square"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #ec3013; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M30 26 H94 V78 H30 Z" stroke="#ffffff" stroke-width="7" stroke-dasharray="18 12"/><path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#ffffff" stroke-width="18" stroke-linecap="square"/><path d="M94 78 h0" stroke="#ffffff" stroke-width="18" stroke-linecap="square"/></g></svg></div></div>
+        </div>
+        <div style="display: contents">
+          <div style="background: #f3f2f2; display: flex; align-items: center; padding: 0 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 700">mobile</div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #f3f2f2; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M26 78 V64" stroke="#201e1d" stroke-width="13"/><path d="M48 78 V52" stroke="#201e1d" stroke-width="13"/><path d="M70 78 V38" stroke="#201e1d" stroke-width="13"/><path d="M92 78 V24" stroke="#ec3013" stroke-width="13"/><path d="M18 90 H100" stroke="#201e1d" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #eae9e9; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M26 78 V64" stroke="#201e1d" stroke-width="13"/><path d="M48 78 V52" stroke="#201e1d" stroke-width="13"/><path d="M70 78 V38" stroke="#201e1d" stroke-width="13"/><path d="M92 78 V24" stroke="#ec3013" stroke-width="13"/><path d="M18 90 H100" stroke="#201e1d" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #151313; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M26 78 V64" stroke="#f3f2f2" stroke-width="13"/><path d="M48 78 V52" stroke="#f3f2f2" stroke-width="13"/><path d="M70 78 V38" stroke="#f3f2f2" stroke-width="13"/><path d="M92 78 V24" stroke="#ff4747" stroke-width="13"/><path d="M18 90 H100" stroke="#f3f2f2" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #1a1a19; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M26 78 V64" stroke="#f3f2f2" stroke-width="13"/><path d="M48 78 V52" stroke="#f3f2f2" stroke-width="13"/><path d="M70 78 V38" stroke="#f3f2f2" stroke-width="13"/><path d="M92 78 V24" stroke="#ff4747" stroke-width="13"/><path d="M18 90 H100" stroke="#f3f2f2" stroke-width="7"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #ec3013; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M26 78 V64" stroke="#ffffff" stroke-width="13"/><path d="M48 78 V52" stroke="#ffffff" stroke-width="13"/><path d="M70 78 V38" stroke="#ffffff" stroke-width="13"/><path d="M92 78 V24" stroke="#ffffff" stroke-width="13"/><path d="M18 90 H100" stroke="#ffffff" stroke-width="7"/></g></svg></div></div>
+        </div>
+        <div style="display: contents">
+          <div style="background: #f3f2f2; display: flex; align-items: center; padding: 0 22px; border-right: 1px solid rgba(32,30,29,0.16); border-bottom: 1px solid rgba(32,30,29,0.16); font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 700">docs</div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #f3f2f2; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M22 18 H98 V86 H22 Z" stroke="#201e1d" stroke-width="7"/><path d="M58 62 H98" stroke="#201e1d" stroke-width="7"/><path d="M58 62 V86" stroke="#201e1d" stroke-width="7"/><path d="M70 74 H86" stroke="#ec3013" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #eae9e9; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M22 18 H98 V86 H22 Z" stroke="#201e1d" stroke-width="7"/><path d="M58 62 H98" stroke="#201e1d" stroke-width="7"/><path d="M58 62 V86" stroke="#201e1d" stroke-width="7"/><path d="M70 74 H86" stroke="#ec3013" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #151313; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M22 18 H98 V86 H22 Z" stroke="#f3f2f2" stroke-width="7"/><path d="M58 62 H98" stroke="#f3f2f2" stroke-width="7"/><path d="M58 62 V86" stroke="#f3f2f2" stroke-width="7"/><path d="M70 74 H86" stroke="#ff4747" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #1a1a19; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M22 18 H98 V86 H22 Z" stroke="#f3f2f2" stroke-width="7"/><path d="M58 62 H98" stroke="#f3f2f2" stroke-width="7"/><path d="M58 62 V86" stroke="#f3f2f2" stroke-width="7"/><path d="M70 74 H86" stroke="#ff4747" stroke-width="13"/></g></svg></div></div>
+          <div style="border-bottom: 1px solid rgba(32,30,29,0.16)"><div style="background: #ec3013; aspect-ratio: 1; display: grid; place-items: center; border-right: 1px solid rgba(32,30,29,0.16)"><svg viewBox="0 0 116 100" style="width: 58%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"><path d="M22 18 H98 V86 H22 Z" stroke="#ffffff" stroke-width="7"/><path d="M58 62 H98" stroke="#ffffff" stroke-width="7"/><path d="M58 62 V86" stroke="#ffffff" stroke-width="7"/><path d="M70 74 H86" stroke="#ffffff" stroke-width="13"/></g></svg></div></div>
+        </div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); background: #f3f2f2">
+      <div style="padding: 26px clamp(24px, 5vw, 72px) 32px; border-right: 1px solid rgba(32,30,29,0.16); font-size: 14.5px; line-height: 1.6; color: #605d5d">On light grounds: ink <span style="font-family: 'JetBrains Mono', monospace; color: #201e1d">#201E1D</span>, accent <span style="font-family: 'JetBrains Mono', monospace; color: #201e1d">#EC3013</span>. On dark: <span style="font-family: 'JetBrains Mono', monospace; color: #201e1d">#F3F2F2</span> and <span style="font-family: 'JetBrains Mono', monospace; color: #201e1d">#FF4747</span> — the dash red, because #EC3013 sinks into #121212.</div>
+      <div style="padding: 26px clamp(24px, 5vw, 72px) 32px; font-size: 14.5px; line-height: 1.6; color: #605d5d">On the accent ground the mark goes all white: a red element on red would disappear, and tinting it darker would break the one-accent rule.</div>
+    </div>
+  </section>
+
+  <section style="border-bottom: 2px solid #201e1d">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding: 38px clamp(24px, 5vw, 72px) 30px; border-bottom: 1px solid rgba(32,30,29,0.16)">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase">As product icons</h2>
+      <span style="font-size: 13px; color: #605d5d">The same marks ship as app icons and favicons — the repo avatar is only one of their jobs.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); background: #f3f2f2">
+      <div style="background: #f3f2f2; padding: 34px 26px 38px; border-right: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 20px">
+        <div style="width: 100%; aspect-ratio: 1; background: #151313; display: grid; place-items: center; position: relative">
+          
+          <svg viewBox="0 0 116 100" style="width: 54%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M26 78 V64" stroke="#f3f2f2" stroke-width="13"/> <path d="M48 78 V52" stroke="#f3f2f2" stroke-width="13"/> <path d="M70 78 V38" stroke="#f3f2f2" stroke-width="13"/> <path d="M92 78 V24" stroke="#ff4747" stroke-width="13"/> <path d="M18 90 H100" stroke="#f3f2f2" stroke-width="7"/> </g></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; color: #ec3013">iOS · 1024</div>
+          <div style="font-size: 13.5px; line-height: 1.5; color: #605d5d">App Store icon for the mobile companion. Square artwork — iOS applies its own mask, we never round the corners.</div>
+        </div>
+      </div>
+      <div style="background: #f3f2f2; padding: 34px 26px 38px; border-right: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 20px">
+        <div style="width: 100%; aspect-ratio: 1; background: #151313; display: grid; place-items: center; position: relative">
+          <div style="position: absolute; inset: 12%; border: 1px dashed rgba(255,255,255,0.35); border-radius: 50%"></div>
+          <svg viewBox="0 0 116 100" style="width: 42%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M26 78 V64" stroke="#f3f2f2" stroke-width="13"/> <path d="M48 78 V52" stroke="#f3f2f2" stroke-width="13"/> <path d="M70 78 V38" stroke="#f3f2f2" stroke-width="13"/> <path d="M92 78 V24" stroke="#ff4747" stroke-width="13"/> <path d="M18 90 H100" stroke="#f3f2f2" stroke-width="7"/> </g></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; color: #ec3013">ANDROID ADAPTIVE</div>
+          <div style="font-size: 13.5px; line-height: 1.5; color: #605d5d">Same mark at 42 % inside the 108 dp canvas, so the top bar survives a circular crop.</div>
+        </div>
+      </div>
+      <div style="background: #f3f2f2; padding: 34px 26px 38px; border-right: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 20px">
+        <div style="width: 100%; aspect-ratio: 1; background: #eae9e9; display: grid; place-items: center; position: relative">
+          
+          <svg viewBox="0 0 116 100" style="width: 54%" fill="none"><g transform="translate(10,0) skewX(-11)" fill="none"> <path d="M30 26 H94 V78 H30 Z" stroke="#201e1d" stroke-width="7" stroke-dasharray="18 12"/> <path d="M30 26 h0 M94 26 h0 M30 78 h0" stroke="#201e1d" stroke-width="18" stroke-linecap="square"/> <path d="M94 78 h0" stroke="#ec3013" stroke-width="18" stroke-linecap="square"/> </g></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; color: #ec3013">TUNER · FAVICON</div>
+          <div style="font-size: 13.5px; line-height: 1.5; color: #605d5d">Selection bounds at 32 px, ink on light. Below 24 px the dashes close into a solid rule.</div>
+        </div>
+      </div>
+      <div style="background: #f3f2f2; padding: 34px 26px 38px; border-right: 1px solid rgba(32,30,29,0.16); display: flex; flex-direction: column; gap: 20px">
+        <div style="width: 100%; aspect-ratio: 1; background: #151313; display: grid; place-items: center; position: relative">
+          
+          <svg viewBox="0 0 116 100" style="width: 52%" fill="none"><g transform="translate(8,0)" fill="none"> <path d="M18 18 H98 V84 H18 Z" stroke="#f3f2f2" stroke-width="15"/> <path d="M58 60 H82" stroke="#ff4747" stroke-width="15"/> </g></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; color: #ec3013">DOCS · FAVICON</div>
+          <div style="font-size: 13.5px; line-height: 1.5; color: #605d5d">The sheet at 16 px: outline and revision rule. Two elements — the title block does not survive.</div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px; padding: 30px clamp(24px, 5vw, 72px) 36px; border-top: 1px solid rgba(32,30,29,0.16)">
+      <div style="display: flex; align-items: center; gap: 16px">
+        <div style="width: 64px; height: 64px; background: #151313; display: grid; place-items: center"><svg viewBox="0 0 116 100" style="width: 54%" fill="none"><g transform="translate(10,0) skewX(-11)"><path d="M46 26 H22 V74 H46" stroke="#f3f2f2" stroke-width="13"/><path d="M96 26 H66 V50 H96 V74 H66" stroke="#ff4747" stroke-width="13"/></g></svg></div>
+        <div style="width: 64px; height: 64px; background: #ec3013; display: grid; place-items: center"><svg viewBox="0 0 116 100" style="width: 54%" fill="none"><g transform="translate(10,0) skewX(-11)"><path d="M46 26 H22 V74 H46" stroke="#ffffff" stroke-width="13"/><path d="M96 26 H66 V50 H96 V74 H66" stroke="#ffffff" stroke-width="13"/></g></svg></div>
+      </div>
+      <div style="font-size: 14.5px; line-height: 1.6; color: #605d5d; max-width: 60ch; text-wrap: pretty">The CS monogram stays the umbrella mark — org avatar, splash screen, the icon on the dash itself. A repo mark never replaces it; it identifies one piece inside the system.</div>
+    </div>
+  </section>
+
+  <section style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)">
+    <div style="padding: 64px clamp(24px, 5vw, 72px); border-right: 1px solid rgba(32,30,29,0.16)">
+      <h2 style="margin: 0 0 20px; font-size: 28px; font-weight: 800; letter-spacing: -0.02em">Using them</h2>
+      <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: #605d5d; max-width: 54ch; text-wrap: pretty">Each mark is a single SVG with two path groups — ink and accent. Swap the ink for <span style="font-family: 'JetBrains Mono', monospace; color: #201e1d">currentColor</span> to let it follow the surrounding text, and switch the accent to #FF4747 on dark grounds.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #605d5d; max-width: 54ch; text-wrap: pretty">In the docs sidebar they sit at 16 px next to their section, on the org page they are the repo avatars at 460 px, and the mobile mark is the app icon at 1024. Only the small sizes need the second drawing: the shear closes up and the secondary rules are dropped.</p>
+    </div>
+    <div style="padding: 64px clamp(24px, 5vw, 72px); background: #ec3013; color: #fff; display: flex; flex-direction: column; justify-content: space-between; gap: 34px">
+      <div style="display: flex; align-items: center; gap: 14px"><div style="height: 8px; width: 76px; background: repeating-linear-gradient(90deg, #fff 0 4px, transparent 4px 8px)"></div><div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; opacity: 0.85">FIVE REPOS, ONE GRID</div></div>
+      <div style="font-size: 30px; font-weight: 800; line-height: 1.12; letter-spacing: -0.025em; max-width: 22ch">If a sixth repo appears, it gets one red element and nothing else.</div>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+</body>
+</html>
