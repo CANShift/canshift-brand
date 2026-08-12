@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0d0d0d; }
+  a { color: #a3a09e; text-decoration: none; }
+  a:hover { color: #f3f2f2; }
+  @keyframes cs-pulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.35 } }
+  [data-armed] { animation: cs-pulse 1s ease-in-out infinite; }
+</style>
+</helmet>
+
+<div style="background: #0d0d0d; color: #f3f2f2; font-family: 'Archivo', system-ui, sans-serif; padding: 56px 56px 80px">
+
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; padding-bottom: 18px; border-bottom: 2px solid #f3f2f2; margin-bottom: 40px">
+    <div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #7d7979; margin-bottom: 12px">CANSHIFT DASH — DEFAULT PAGES</div>
+      <h1 style="margin: 0; font-size: 40px; font-weight: 800; letter-spacing: -0.035em; line-height: 1">Six pages, one grammar</h1>
+    </div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7d7979; text-align: right; line-height: 1.8">
+      <div>320 × 240 · SHOWN AT 2×</div>
+      <div>NIGHT THEME · FW 0.1.0</div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 44px">
+
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.16em">PAGE 01</span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.02em">Street</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7d7979; margin-left: auto">cruising, daily</span>
+      </div>
+      <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid rgba(243,242,242,0.15); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>MAP 1</span><span>TRIP 128 km</span></div>
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+          <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">SPEED</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 96px; line-height: 0.92; letter-spacing: -0.045em">82<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> km/h</span></div>
+          </div>
+          <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">GEAR</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 96px; line-height: 0.92; letter-spacing: -0.045em">4</div>
+          </div>
+          <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 16px 4px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">RPM</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 44px; line-height: 0.92; letter-spacing: -0.03em">2400<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> rpm</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px; margin-right: 16px"><div style="width: 29%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 3; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">WATER</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">88<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 3; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">FUEL</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">46<span style="font-size: 16px; color: #babab8"> %</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px"><div style="width: 46%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BATT</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">13.8<span style="font-size: 16px; color: #babab8"> V</span></div>
+          </div>
+          <div style="grid-column: span 8; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">ODO</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">184203<span style="font-size: 16px; color: #babab8"> km</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.16em">PAGE 02</span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.02em">Track</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7d7979; margin-left: auto">shift light · oil press in danger</span>
+      </div>
+      <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid rgba(243,242,242,0.15); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; height: 14px; flex: none">
+          <div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #FF4444"></div><div style="background: #FF4444"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>MAP 1</span><span>LAP 4 — 1:38.42</span></div>
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+          <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">RPM</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em">5200<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> rpm</span></div>
+          </div>
+          <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">GEAR</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em">3</div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">SPEED</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">195<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> km/h</span></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #FF4444; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF4444; margin-bottom: 3px">OIL PRESS</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #FF4444">1.1<span style="font-size: 16px; letter-spacing: 0"> bar</span></div>
+          </div>
+          <div style="grid-column: span 3; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">WATER</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">78<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 3; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">OIL T</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">112<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 3; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BOOST</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">1.42<span style="font-size: 16px; color: #babab8"> bar</span></div>
+          </div>
+          <div style="grid-column: span 3; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BATT</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">13.3<span style="font-size: 16px; color: #babab8"> V</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.16em">PAGE 03</span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.02em">Engine</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7d7979; margin-left: auto">four primaries with bar gauges</span>
+      </div>
+      <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid rgba(243,242,242,0.15); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>MAP 1</span><span>MAX OIL 128</span></div>
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+          <div style="grid-column: span 6; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">WATER</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">98<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> °C</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px; margin-right: 16px"><div style="width: 70%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">OIL TEMP</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">112<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> °C</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px"><div style="width: 78%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #FF4444; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF4444; margin-bottom: 3px">OIL PRESS</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #FF4444">1.1<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px; margin-right: 16px"><div style="width: 22%; height: 100%; background: #FF4444"></div></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">FUEL PRESS</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">3.8<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px"><div style="width: 63%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">GEARBOX</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">96<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">DIFF</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">104<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BATT</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">13.3<span style="font-size: 16px; color: #babab8"> V</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.16em">PAGE 04</span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.02em">Tuning</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7d7979; margin-left: auto">lambda lean, in danger</span>
+      </div>
+      <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid rgba(243,242,242,0.15); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>MAP 2</span><span>PEAK 1.61</span></div>
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+          <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">BOOST</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em">1.42<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px; margin-right: 16px"><div style="width: 68%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">TARGET</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">1.50<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #FF4444; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF4444; margin-bottom: 3px">LAMBDA</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #FF4444">0.88<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> λ</span></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">THROTTLE</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">92<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> %</span></div>
+            <div style="height: 3px; background: #222; margin-top: 7px"><div style="width: 92%; height: 100%; background: #fff"></div></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">IAT</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">34<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">EGT</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">912<span style="font-size: 16px; color: #babab8"> °C</span></div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">KNOCK</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.16em">PAGE 05</span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.02em">Timing</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7d7979; margin-left: auto">timer engaged</span>
+      </div>
+      <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid rgba(243,242,242,0.15); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>LAP 4</span><span>BEST 1:36.08</span></div>
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+          <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">LAP</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 80px; line-height: 0.92; letter-spacing: -0.045em">1:38.42</div>
+          </div>
+          <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">DELTA</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 80px; line-height: 0.92; letter-spacing: -0.045em">−0.42<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> s</span></div>
+          </div>
+          <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 16px 4px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BEST</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 44px; line-height: 0.92; letter-spacing: -0.03em">1:36.08</div>
+          </div>
+          <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">LAST</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 44px; line-height: 0.92; letter-spacing: -0.03em">1:37.19</div>
+          </div>
+          <div style="grid-column: span 2; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">LAPS</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 44px; line-height: 0.92; letter-spacing: -0.03em">4</div>
+          </div>
+          <div data-armed style="grid-column: span 6; min-height: 96px; border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">TIMER</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">RUNNING</div>
+          </div>
+          <div style="grid-column: span 6; min-height: 96px; border: 2px solid #fff; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">RESET LAP</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1">RESET</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.16em">PAGE 06</span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.02em">Controls</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #7d7979; margin-left: auto">two engaged, three idle</span>
+      </div>
+      <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid rgba(243,242,242,0.15); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>ALS ON</span><span>ARMED</span></div>
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+          <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">LAUNCH RPM</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em">4200<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> rpm</span></div>
+          </div>
+          <div style="grid-column: span 5; border-top: 1px solid #222; padding: 5px 0 4px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">CLUTCH</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em">IN</div>
+          </div>
+          <div data-armed style="grid-column: span 6; min-height: 96px; border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">LAUNCH</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ARMED</div>
+          </div>
+          <div style="grid-column: span 6; min-height: 96px; border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">ANTI-LAG</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ON</div>
+          </div>
+          <div style="grid-column: span 4; min-height: 96px; border: 2px solid #fff; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">ECU MAP</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1">MAP 1</div>
+          </div>
+          <div style="grid-column: span 4; min-height: 96px; border: 2px solid #fff; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">PIT LIMIT</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1">OFF</div>
+          </div>
+          <div style="grid-column: span 4; min-height: 96px; border: 2px solid #fff; padding: 12px 14px; display: flex; flex-direction: column; justify-content: center">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">CRUISE</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1">110</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1480,&quot;height&quot;:1240}}"></script>
+</body>
+</html>
