@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-cd1320ec-1895-49a6-9838-03478e71982b/styles.css">
+<script src="_ds/modernist-cd1320ec-1895-49a6-9838-03478e71982b/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--color-neutral-200); }
+  a { color: var(--color-neutral-700); }
+  a:hover { color: var(--color-text); }
+  @keyframes cs-pulse { from { opacity: 1 } to { opacity: 0.4 } }
+  [data-pulse] { animation: cs-pulse 1s ease-in-out infinite alternate; }
+</style>
+</helmet>
+
+<div style="padding: 44px 44px 90px; font-family: var(--font-body); color: var(--color-text); display: flex; flex-direction: column; gap: 50px">
+
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; padding-bottom: 16px; border-bottom: 2px solid var(--color-divider)">
+    <div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent); margin-bottom: 12px">CANSHIFT — STATES AND ALERTS</div>
+      <h1 style="margin: 0; font-family: var(--font-heading); font-size: 38px; font-weight: 800; letter-spacing: -0.035em; line-height: 1">Every state the products can be in</h1>
+    </div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--color-neutral-600); text-align: right; line-height: 1.9">
+      <div>FOUR SEVERITY LEVELS</div>
+      <div>DASH · CONTROLS · TUNER · MOBILE</div>
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">00</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">The severity grammar</h2>
+    </div>
+    <p style="margin: 0 0 22px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-700); max-width: 78ch; text-wrap: pretty">The dash had one level, the critical takeover. Four levels need one promoted token: the amber already used for the DO NOT UNPLUG line during a firmware update now carries the warning role. No new colour beyond that, and the level is always carried by the rule and the ground, never by an icon or a badge.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider)">
+      <div style="padding: 26px 24px 26px 0; border-right: 1px solid var(--color-neutral-300)">
+        <div style="background: #121212; padding: 14px 16px 18px; margin-bottom: 16px">
+          <div style="border-top: 2px solid #fff; padding-top: 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 2px">WATER</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">88<span style="font-size: 14px; color: #babab8"> °C</span></div>
+          </div>
+        </div>
+        <div style="font-family: var(--font-heading); font-weight: 800; font-size: 15px; margin-bottom: 6px">01 Information</div>
+        <div style="font-size: 13.5px; line-height: 1.55; color: var(--color-neutral-700)">A transient state needing no action reads exactly like a healthy value. No colour, no badge. If it needs a badge it is not information.</div>
+      </div>
+      <div style="padding: 26px 24px; border-right: 1px solid var(--color-neutral-300)">
+        <div style="background: #121212; padding: 14px 16px 18px; margin-bottom: 16px">
+          <div style="border-top: 2px solid #FF8800; padding-top: 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF8800; margin-bottom: 2px">OIL TEMP</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #FF8800">128<span style="font-size: 14px; color: #babab8"> °C</span></div>
+          </div>
+        </div>
+        <div style="font-family: var(--font-heading); font-weight: 800; font-size: 15px; margin-bottom: 6px">02 Warning · #FF8800</div>
+        <div style="font-size: 13.5px; line-height: 1.55; color: var(--color-neutral-700)">One reading out of range. Rule, kicker and value turn amber; the unit stays dim and the rest of the page is untouched. Nothing blinks.</div>
+      </div>
+      <div style="padding: 26px 24px; border-right: 1px solid var(--color-neutral-300)">
+        <div data-pulse style="background: #FF4444; padding: 14px 16px 18px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 5px">
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 10px; letter-spacing: 0.16em; color: #fff">OIL PRESSURE</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">0.4</div>
+        </div>
+        <div style="font-family: var(--font-heading); font-weight: 800; font-size: 15px; margin-bottom: 6px">03 Critical · #FF4444</div>
+        <div style="font-size: 13.5px; line-height: 1.55; color: var(--color-neutral-700)">The engine is at risk. Full takeover, pulsing, preempting every page, held until acknowledged. Physical danger only.</div>
+      </div>
+      <div style="padding: 26px 0 26px 24px">
+        <div style="background: #121212; padding: 14px 16px 18px; margin-bottom: 16px">
+          <div style="border-top: 2px solid #FF4444; padding-top: 6px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF4444; margin-bottom: 5px">CONFIG REJECTED</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 15px; line-height: 1.35; color: #fff">PAGE 4 EXCEEDS<br>240 PX</div>
+          </div>
+        </div>
+        <div style="font-family: var(--font-heading); font-weight: 800; font-size: 15px; margin-bottom: 6px">04 Failure · #FF4444</div>
+        <div style="font-size: 13.5px; line-height: 1.55; color: var(--color-neutral-700)">The system cannot continue. Danger rule on the normal ground, the reason in mono, one stated way out. Never a takeover.</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); margin-bottom: 26px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">A</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Dash — system states</h2>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">320 × 240 · SHOWN AT 2× · NIGHT</span>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 40px">
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D01</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Boot</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the only centred screen · 400 ms</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); display: grid; place-items: center">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 26px">
+            <svg viewBox="0 0 116 100" style="width: 128px" fill="none"><g transform="translate(10,0) skewX(-11)"><path d="M46 26 H22 V74 H46" stroke="#f3f2f2" stroke-width="13"></path><path d="M96 26 H66 V50 H96 V74 H66" stroke="#FF4747" stroke-width="13"></path></g></svg>
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 24px; letter-spacing: 0.16em; color: #f3f2f2; transform: skewX(-11deg)">CANSHIFT</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D02</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Self-test</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">one line per check, in run order</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace">
+          <div style="border-top: 2px solid #fff; padding-top: 7px; margin-bottom: 18px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 10px; letter-spacing: 0.18em; color: #babab8">SELF-TEST</div>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #222; font-size: 20px; color: #fff"><span>DISPLAY</span><span style="color: #babab8">OK</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #222; font-size: 20px; color: #fff"><span>TOUCH</span><span style="color: #babab8">OK</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #222; font-size: 20px; color: #fff"><span>FLASH</span><span style="color: #babab8">OK</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #222; font-size: 20px; color: #fff"><span>CONFIG</span><span style="color: #babab8">6 PAGES</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #222; font-size: 20px; color: #FF8800"><span>CAN BUS</span><span>NO FRAMES</span></div>
+          <div style="margin-top: auto; font-size: 15px; color: #babab8">CONTINUING IN 2 s</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D03</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Firmware update</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the amber warning line, in situ</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #fff; padding-top: 7px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 10px; letter-spacing: 0.18em; color: #babab8">UPDATING FIRMWARE</div>
+          </div>
+          <div style="margin-top: 44px; font-family: 'JetBrains Mono', monospace; font-size: 112px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">68<span style="font-size: 28px; color: #babab8"> %</span></div>
+          <div style="margin-top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #babab8">0.1.0 → 0.1.1</div>
+          <div style="margin-top: auto; height: 10px; background: #222"><div style="width: 68%; height: 100%; background: #FF4747"></div></div>
+          <div style="margin-top: 12px; font-family: var(--font-heading); font-weight: 800; font-size: 18px; letter-spacing: 0.14em; color: #FF8800">DO NOT UNPLUG</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D04</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Signals lost</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">500 ms without a frame — the only meaning of - -</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #FF8800"><span>CAN — Hz</span><span style="color: #babab8">MAP 1</span><span style="color: #babab8">TRIP 128 km</span></div>
+          <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+            <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">SPEED</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 96px; line-height: 0.92; letter-spacing: -0.045em; color: #babab8">- -<span style="font-size: 16px; letter-spacing: 0"> km/h</span></div>
+            </div>
+            <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">GEAR</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 96px; line-height: 0.92; letter-spacing: -0.045em; color: #babab8">-</div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 16px 4px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">RPM</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 44px; line-height: 0.92; color: #babab8">- - - -</div>
+              <div style="height: 3px; background: #222; margin-top: 7px; margin-right: 16px"></div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BATT</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">13.8<span style="font-size: 16px; color: #babab8"> V</span></div>
+            </div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #FF8800">BUS SILENT 4 s — CHECK WIRING</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D05</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Critical alert</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">preempts every page · pulsing 1 s</span>
+        </div>
+        <div data-pulse style="box-sizing: border-box; width: 640px; height: 480px; background: #FF4444; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 26px; letter-spacing: 0.16em; color: #fff">OIL PRESSURE</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 168px; line-height: 0.88; letter-spacing: -0.05em; color: #fff; margin-top: 8px">0.4</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 22px; color: rgba(255,255,255,0.8); margin-top: 6px">MIN 1.8 bar · AT 5200 rpm</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid rgba(255,255,255,0.5); font-family: var(--font-heading); font-weight: 800; font-size: 30px; letter-spacing: 0.1em; color: #fff">STOP THE ENGINE</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D06</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Config rejected</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">failure · one stated way out</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #FF4444; padding-top: 7px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 10px; letter-spacing: 0.18em; color: #FF4444">CONFIG REJECTED</div>
+          </div>
+          <div style="margin-top: 34px; font-family: 'JetBrains Mono', monospace; font-size: 44px; line-height: 1.1; letter-spacing: -0.03em; color: #fff">PAGE 4<br>EXCEEDS 240 PX</div>
+          <div style="margin-top: 20px; font-family: 'JetBrains Mono', monospace; font-size: 18px; line-height: 1.6; color: #babab8">WIDGET EGT AT Y 208, H 52<br>MAX Y 240 — OVER BY 20</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #222; font-family: 'JetBrains Mono', monospace; font-size: 17px; color: #babab8">RUNNING LAST GOOD CONFIG — FIX IN THE TUNER</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D07</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">No config — first boot</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the empty state, stated plainly</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #fff; padding-top: 7px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 10px; letter-spacing: 0.18em; color: #babab8">NO CONFIG</div>
+          </div>
+          <div style="margin-top: 34px; font-family: 'JetBrains Mono', monospace; font-size: 40px; line-height: 1.15; letter-spacing: -0.03em; color: #fff">NOTHING TO<br>DISPLAY YET</div>
+          <div style="margin-top: 22px; font-family: 'JetBrains Mono', monospace; font-size: 18px; line-height: 1.65; color: #babab8">CONNECT USB-C AND OPEN<br>DOCS.CANSHIFT.TMBK.CH/TUNER</div>
+          <div style="margin-top: auto; display: flex; gap: 12px">
+            <div style="flex: 1; border: 2px solid #fff; padding: 12px 14px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">USB</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">READY</div>
+            </div>
+            <div style="flex: 1; border: 2px solid #fff; padding: 12px 14px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">FIRMWARE</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">0.1.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">D08</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Rev limit</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">shift light blinks 6 Hz — shown lit</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; height: 14px; flex: none">
+            <div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #FF4444"></div><div style="background: #FF4444"></div><div style="background: #FF4444"></div><div style="background: #FF4444"></div><div style="background: #FF4444"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #babab8"><span>CAN 842 Hz</span><span>MAP 1</span><span>LIMIT 7200</span></div>
+          <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+            <div style="grid-column: span 7; border-top: 2px solid #FF4444; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF4444; margin-bottom: 3px">RPM</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em; color: #FF4444">7200</div>
+            </div>
+            <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">GEAR</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">3</div>
+            </div>
+            <div style="grid-column: span 6; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">SPEED</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">204<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> km/h</span></div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">BOOST</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">1.58<span style="font-size: 16px; color: #babab8"> bar</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); margin-bottom: 14px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">B</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Controls — the engaged states</h2>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">anti-lag · traction · launch · pit limit · cruise</span>
+    </div>
+    <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-700); max-width: 78ch; text-wrap: pretty">Every control reads the same four ways, so the driver never learns a second vocabulary. <strong>Off</strong> is a 2 px white outline on the page ground. <strong>Armed</strong> is the same outline pulsing at 1 s — the condition is met but the function has not fired. <strong>Active</strong> is a solid accent fill. <strong>Unavailable</strong> drops the outline to #333 and the text to #6b6b6b, and states the reason in the kicker. Armed and unavailable cells are marked in the column header rather than animated here.</p>
+
+    <div style="display: grid; grid-template-columns: 132px repeat(4, 1fr); border-top: 2px solid var(--color-divider)">
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 12px 14px 12px 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600)">CONTROL</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 12px 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600)">OFF</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 12px 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600)">ARMED — PULSES 1 s</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 12px 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600)">ACTIVE</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); padding: 12px 0 12px 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600)">UNAVAILABLE</div>
+
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px 20px 0; font-family: var(--font-heading); font-weight: 800; font-size: 14px">Anti-lag</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">ANTI-LAG</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">OFF</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px; opacity: 0.6"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">ANTI-LAG</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ARMED</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">ANTI-LAG</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ON</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); padding: 20px 0 20px 14px; background: #121212">
+        <div style="border: 2px solid #333; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #6b6b6b; margin-bottom: 6px">ANTI-LAG · EGT HIGH</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #6b6b6b">LOCKED</div></div>
+      </div>
+
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px 20px 0; font-family: var(--font-heading); font-weight: 800; font-size: 14px">Traction control</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">TRACTION</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">OFF</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px; opacity: 0.6">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">TRACTION</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff; margin-bottom: 8px">LEVEL 4</div>
+          <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; height: 6px"><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #222"></div><div style="background: #222"></div></div>
+        </div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">TRACTION · CUTTING</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff; margin-bottom: 8px">LEVEL 4</div>
+          <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; height: 6px"><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: rgba(255,255,255,0.3)"></div><div style="background: rgba(255,255,255,0.3)"></div></div>
+        </div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); padding: 20px 0 20px 14px; background: #121212">
+        <div style="border: 2px solid #333; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #6b6b6b; margin-bottom: 6px">TRACTION · NO WHEEL SPEED</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #6b6b6b">N/A</div></div>
+      </div>
+
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px 20px 0; font-family: var(--font-heading); font-weight: 800; font-size: 14px">Launch control</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">LAUNCH</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">OFF</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px; opacity: 0.6"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">LAUNCH · 4200 rpm</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ARMED</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">LAUNCH · HOLDING</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">4200</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); padding: 20px 0 20px 14px; background: #121212">
+        <div style="border: 2px solid #333; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #6b6b6b; margin-bottom: 6px">LAUNCH · MOVING</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #6b6b6b">LOCKED</div></div>
+      </div>
+
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px 20px 0; font-family: var(--font-heading); font-weight: 800; font-size: 14px">Pit limiter</div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">PIT LIMIT</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">OFF</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px; opacity: 0.6"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">PIT LIMIT · 60 km/h</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">READY</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">PIT LIMIT · HOLDING</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">60</div></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--color-neutral-300); padding: 20px 0 20px 14px; background: #121212">
+        <div style="border: 2px solid #333; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #6b6b6b; margin-bottom: 6px">PIT LIMIT · GEAR 4</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #6b6b6b">LOCKED</div></div>
+      </div>
+
+      <div style="border-bottom: 2px solid var(--color-divider); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px 20px 0; font-family: var(--font-heading); font-weight: 800; font-size: 14px">Cruise</div>
+      <div style="border-bottom: 2px solid var(--color-divider); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">CRUISE</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">OFF</div></div>
+      </div>
+      <div style="border-bottom: 2px solid var(--color-divider); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #fff; padding: 12px 14px; opacity: 0.6"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">CRUISE · SET 110</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ARMED</div></div>
+      </div>
+      <div style="border-bottom: 2px solid var(--color-divider); border-right: 1px solid var(--color-neutral-300); padding: 20px 14px; background: #121212">
+        <div style="border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">CRUISE · HOLDING</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">110</div></div>
+      </div>
+      <div style="border-bottom: 2px solid var(--color-divider); padding: 20px 0 20px 14px; background: #121212">
+        <div style="border: 2px solid #333; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #6b6b6b; margin-bottom: 6px">CRUISE · BRAKE CUT</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #6b6b6b">CANCELLED</div></div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 2px solid var(--color-divider)">
+      <div style="padding: 22px 22px 22px 0; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">WHY NO ICONS</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">A traction-control glyph is an OEM convention and unreadable at 320 px. The word plus the state carries it, and the word is what the driver would say out loud.</div>
+      </div>
+      <div style="padding: 22px; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">THE KICKER CARRIES THE REASON</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">A control that cannot arm never just greys out: the kicker states why — MOVING, EGT HIGH, NO WHEEL SPEED, BRAKE CUT. Outline #333, text #6b6b6b.</div>
+      </div>
+      <div style="padding: 22px 0 22px 22px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">ACTIVE IS STEADY</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">The 1 s pulse belongs to armed and to armed only. An active control is a steady accent fill; traction control shows that it is intervening in the kicker (CUTTING), not by moving.</div>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: baseline; gap: 14px; margin: 34px 0 8px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">B2</span>
+      <h3 style="margin: 0; font-family: var(--font-heading); font-size: 19px; font-weight: 800; letter-spacing: -0.02em">How a control is operated</h3>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the buttons stay — the splash is only the receipt</span>
+    </div>
+    <p style="margin: 0 0 22px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-700); max-width: 78ch; text-wrap: pretty">The button widget is where the driver acts; the splash in section E is what confirms it. Two kinds of button, and the kind is legible from the state word alone.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider)">
+      <div style="padding: 26px 26px 26px 0; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 14px">TOGGLE — TAP FLIPS IT</div>
+        <div style="background: #121212; padding: 18px; display: flex; gap: 12px; margin-bottom: 16px">
+          <div style="flex: 1; border: 2px solid #fff; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">ANTI-LAG</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">OFF</div></div>
+          <div style="display: grid; place-items: center; font-family: 'JetBrains Mono', monospace; font-size: 22px; color: #babab8">→</div>
+          <div style="flex: 1; border: 2px solid #FF4747; background: #FF4747; padding: 12px 14px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: rgba(255,255,255,0.75); margin-bottom: 6px">ANTI-LAG</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff">ON</div></div>
+        </div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">Anti-lag, launch, pit limit and cruise. One tap engages, the next disengages. The state word is always a word — <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">ON</span> / <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">OFF</span>, <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">ARMED</span>, <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">READY</span>.</div>
+      </div>
+      <div style="padding: 26px 0 26px 26px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 14px">STEPPER — EACH TAP GOES UP ONE</div>
+        <div style="background: #121212; padding: 18px; display: flex; gap: 10px; align-items: stretch; margin-bottom: 16px">
+          <div style="flex: 1; border: 2px solid #fff; padding: 12px 14px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">TRACTION</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff; margin-bottom: 8px">LEVEL 3</div>
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; height: 6px"><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div></div>
+          </div>
+          <div style="display: grid; place-items: center; font-family: 'JetBrains Mono', monospace; font-size: 22px; color: #babab8">→</div>
+          <div style="flex: 1; border: 2px solid #fff; padding: 12px 14px">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 6px">TRACTION</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; line-height: 1; color: #fff; margin-bottom: 8px">LEVEL 4</div>
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; height: 6px"><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #222"></div><div style="background: #222"></div></div>
+          </div>
+        </div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">Traction control and the ECU map. <strong>Each tap raises the level by one</strong> — 1, 2, 3 … up to 6 — and the next tap past the top wraps back to OFF, so the whole range is reachable with one finger and no second button. The segment row under the state word is the only readout of where you are; the splash (S04) confirms the new level for 800 ms. A long press of 600 ms jumps straight back to level 1.</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); margin-bottom: 26px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">C</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Tuner — inline states</h2>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the editor never blocks on a modal</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--color-neutral-300); border: 1px solid var(--color-neutral-300)">
+
+      <div style="background: var(--color-bg); padding: 26px 28px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 16px">T01 · CONNECTING</div>
+        <div style="border-left: 3px solid var(--color-text); padding: 14px 18px; background: var(--color-neutral-100)">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 6px">USB CDC</div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; margin-bottom: 4px">Opening the port…</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-700)">Handshake, then the firmware version. Usually under a second.</div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg); padding: 26px 28px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 16px">T02 · BURN FAILED — FAILURE</div>
+        <div style="border-left: 3px solid var(--color-accent); padding: 14px 18px; background: var(--color-accent-100)">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-accent-700); margin-bottom: 6px">PUT_CONFIG · E_CRC</div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; margin-bottom: 4px">The dash rejected the write</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-700); margin-bottom: 14px">Checksum mismatch on chunk 7 of 12. The dash kept its previous config and is still running.</div>
+          <div style="display: flex; gap: 1px">
+            <button type="button" class="btn btn-primary" style="font-size: 12.5px; padding: 10px 16px">RETRY BURN</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 12.5px; padding: 10px 16px">Read the error codes</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg); padding: 26px 28px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 16px">T03 · BUS SILENT — WARNING</div>
+        <div style="border-left: 3px solid #FF8800; padding: 14px 18px; background: var(--color-neutral-100)">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 6px">CAN · 0 FRAMES IN 6 s</div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; margin-bottom: 4px">The dash is connected, the bus is not</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-700)">Editing works and Live data stays empty. Check the bus rate and the 120 Ω termination.</div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg); padding: 26px 28px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 16px">T04 · NO ECU PROFILE — EMPTY</div>
+        <div style="border: 1px solid var(--color-neutral-400); padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">No signals to bind yet</div>
+          <div style="font-size: 13.5px; line-height: 1.55; color: var(--color-neutral-700)">Widgets need a profile before they can read anything. Pick one of the 34 shipped profiles, or derive one from a bus capture.</div>
+          <div style="display: flex; gap: 1px">
+            <button type="button" class="btn btn-primary" style="font-size: 12.5px; padding: 10px 16px">PICK A PROFILE</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 12.5px; padding: 10px 16px">Capture the bus</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg); padding: 26px 28px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 16px">T05 · OUT OF BOUNDS — FAILURE</div>
+        <div style="border-left: 3px solid var(--color-accent); padding: 14px 18px; background: var(--color-accent-100)">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-accent-700); margin-bottom: 6px">PAGE 4 · WIDGET EGT</div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; margin-bottom: 4px">This layout will not fit 320 × 240</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-700)">Bottom edge at 260 px, 20 px over. Burn stays disabled until it fits — the dash never scales a layout to make it work.</div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-bg); padding: 26px 28px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 16px">T06 · LIVE DATA LOADING</div>
+        <div style="border: 1px solid var(--color-neutral-400)">
+          <div style="display: flex; justify-content: space-between; padding: 11px 16px; border-bottom: 1px solid var(--color-neutral-300); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--color-neutral-600)"><span>LIVE DATA</span><span>LISTENING…</span></div>
+          <div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; gap: 14px; align-items: center"><div style="width: 88px; height: 11px; background: var(--color-neutral-300)"></div><div style="flex: 1; height: 11px; background: var(--color-neutral-200)"></div></div>
+            <div style="display: flex; gap: 14px; align-items: center"><div style="width: 64px; height: 11px; background: var(--color-neutral-300)"></div><div style="flex: 1; height: 11px; background: var(--color-neutral-200)"></div></div>
+            <div style="display: flex; gap: 14px; align-items: center"><div style="width: 104px; height: 11px; background: var(--color-neutral-300)"></div><div style="flex: 1; height: 11px; background: var(--color-neutral-200)"></div></div>
+          </div>
+        </div>
+        <div style="margin-top: 12px; font-size: 13px; line-height: 1.55; color: var(--color-neutral-700)">Skeleton rows, no spinner. The row count is the profile's signal count, so the panel does not resize when data arrives.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); margin-bottom: 26px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">D</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Mobile</h2>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">390 × 844 · shown at 300 wide</span>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 32px">
+
+      <div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 10px">M01 · PAIRING</div>
+        <div style="box-sizing: border-box; width: 300px; height: 620px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 20px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; color: #8F8F8F; margin-bottom: 24px"><span>14:22</span><span>CANShift</span><span>82 %</span></div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; color: #fff; padding-bottom: 14px; border-bottom: 2px solid #333">Pairing</div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #262323; color: #fff; font-size: 13px"><span>CANSHIFT-8F21</span><span style="color: #FF4747">CONNECTING</span></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #262323; color: #8F8F8F; font-size: 13px"><span>CANSHIFT-2C04</span><span>-71 dBm</span></div>
+          <div style="margin-top: auto; font-size: 12px; line-height: 1.6; color: #8F8F8F">The dash shows a four-digit code. Confirm it there.</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 10px">M02 · OUT OF RANGE — WARNING</div>
+        <div style="box-sizing: border-box; width: 300px; height: 620px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 20px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; color: #8F8F8F; margin-bottom: 24px"><span>14:22</span><span>CANShift</span><span>78 %</span></div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; color: #fff">Dashboard</div>
+          <div style="font-size: 11px; color: #FF8800; padding-bottom: 14px; border-bottom: 2px solid #333; margin-top: 6px">LINK LOST 8 s AGO</div>
+          <div style="padding: 20px 0; border-bottom: 1px solid #262323">
+            <div style="font-size: 10px; letter-spacing: 0.18em; color: #8F8F8F; margin-bottom: 6px">SPEED</div>
+            <div style="font-size: 46px; line-height: 0.92; color: #8F8F8F">- -</div>
+          </div>
+          <div style="padding: 20px 0; border-bottom: 1px solid #262323">
+            <div style="font-size: 10px; letter-spacing: 0.18em; color: #8F8F8F; margin-bottom: 6px">RPM</div>
+            <div style="font-size: 46px; line-height: 0.92; color: #8F8F8F">- - - -</div>
+          </div>
+          <div style="margin-top: auto; padding: 14px 0 0; border-top: 2px solid #333; font-size: 12px; line-height: 1.6; color: #8F8F8F">Last values held 30 s, then cleared. Reconnecting automatically.</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 10px">M03 · CRITICAL ALERT</div>
+        <div data-pulse style="box-sizing: border-box; width: 300px; height: 620px; background: #FF4444; border: 1px solid var(--color-neutral-400); padding: 20px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace">
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: 0.16em; color: #fff; margin-top: 36px">OIL PRESSURE</div>
+          <div style="font-size: 92px; line-height: 0.9; color: #fff; margin-top: 10px">0.4</div>
+          <div style="font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 8px">MIN 1.8 bar</div>
+          <div style="margin-top: 24px; padding-top: 14px; border-top: 2px solid rgba(255,255,255,0.5); display: flex; flex-direction: column; gap: 10px; font-size: 12px; color: rgba(255,255,255,0.85)">
+            <div style="display: flex; justify-content: space-between"><span>RPM</span><span>5200</span></div>
+            <div style="display: flex; justify-content: space-between"><span>OIL TEMP</span><span>128 °C</span></div>
+            <div style="display: flex; justify-content: space-between"><span>SINCE</span><span>3 s</span></div>
+          </div>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 15px; letter-spacing: 0.1em; color: #fff; margin-bottom: 12px">STOP THE ENGINE</div>
+            <div style="background: #fff; color: #FF4444; font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.09em; padding: 16px 18px">ACKNOWLEDGE</div>
+            <div style="border: 2px solid rgba(255,255,255,0.7); color: #fff; font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.09em; padding: 14px 18px">MUTE FOR THIS SESSION</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 10px">M04 · EMPTY LOG</div>
+        <div style="box-sizing: border-box; width: 300px; height: 620px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 20px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; color: #8F8F8F; margin-bottom: 24px"><span>14:22</span><span>CANShift</span><span>78 %</span></div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; color: #fff; padding-bottom: 14px; border-bottom: 2px solid #333">Console</div>
+          <div style="display: flex; gap: 22px; padding: 14px 0; border-bottom: 1px solid #262323; font-family: var(--font-heading); font-weight: 800; font-size: 11px; letter-spacing: 0.1em"><span style="color: #FF4747; box-shadow: inset 0 -3px 0 #FF4747; padding-bottom: 4px">CAN</span><span style="color: #8F8F8F">LOG</span><span style="color: #8F8F8F">SEND</span></div>
+          <div style="margin-top: 36px; font-size: 15px; line-height: 1.7; color: #8F8F8F">NO FRAMES YET.<br>THE BUS IS QUIET OR THE<br>FILTER IS TOO NARROW.</div>
+          <div style="margin-top: 20px; border: 2px solid #fff; padding: 14px 16px; font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.09em; color: #fff">CLEAR FILTER</div>
+          <div style="margin-top: auto; font-size: 12px; color: #8F8F8F">Filter: ID 0x2C0 – 0x2CF</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--color-neutral-600); margin-bottom: 10px">M05 · LOW BATTERY — WARNING</div>
+        <div style="box-sizing: border-box; width: 300px; height: 620px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 20px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; color: #8F8F8F; margin-bottom: 24px"><span>14:22</span><span>CANShift</span><span style="color: #FF8800">8 %</span></div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; color: #fff; padding-bottom: 14px; border-bottom: 2px solid #333">Device</div>
+          <div style="border-left: 3px solid #FF8800; padding: 14px 16px; margin-top: 20px">
+            <div style="font-size: 10px; letter-spacing: 0.18em; color: #FF8800; margin-bottom: 8px">PHONE BATTERY LOW</div>
+            <div style="font-size: 13px; line-height: 1.6; color: #fff">Logging stops below 5 % to protect the recording. The dash keeps running on its own.</div>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #262323; margin-top: 20px; font-size: 13px; color: #fff"><span style="color: #8F8F8F">LOGGING</span><span>ON · 12 min</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #262323; font-size: 13px; color: #fff"><span style="color: #8F8F8F">DASH BATT</span><span>13.8 V</span></div>
+          <div style="margin-top: auto; border: 2px solid #FF4747; padding: 14px 16px; font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.09em; color: #FF4747">STOP LOGGING NOW</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); margin-bottom: 14px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">E</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Control splash screens</h2>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">800 ms takeover, then back to the page</span>
+    </div>
+    <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-700); max-width: 78ch; text-wrap: pretty">When a control changes state the dash takes the whole screen for 800 ms, so the driver reads the change without looking for a small button. The grammar is fixed: a 2 px rule in the state's colour, the control name as kicker, the new state at 128 px, and the parameter that matters underneath. Engaging is accent, disengaging is ink, refusing is danger. No red field — that stays reserved for the critical alert. The page returns by an instant cut, and a second change inside the 800 ms replaces the splash rather than queueing.</p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 40px">
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">S01</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Anti-lag engaged</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">accent · the limit that matters underneath</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #FF4747; padding-top: 8px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.2em; color: #FF4747">ANTI-LAG</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 128px; line-height: 0.9; letter-spacing: -0.045em; color: #FF4747; margin-top: 26px">ON</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #222; display: flex; gap: 40px; font-family: 'JetBrains Mono', monospace">
+            <div><div style="font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 5px">EGT</div><div style="font-size: 34px; line-height: 1; color: #fff">912<span style="font-size: 15px; color: #babab8"> °C</span></div></div>
+            <div><div style="font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 5px">CUT LIMIT</div><div style="font-size: 34px; line-height: 1; color: #fff">980<span style="font-size: 15px; color: #babab8"> °C</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">S02</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Anti-lag off</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">ink · disengaging is never accent</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #fff; padding-top: 8px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.2em; color: #babab8">ANTI-LAG</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 128px; line-height: 0.9; letter-spacing: -0.045em; color: #fff; margin-top: 26px">OFF</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #222; font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #babab8">EGT FALLING · 906 °C</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">S03</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Launch armed</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the target rpm is the point of the screen</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #FF4747; padding-top: 8px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.2em; color: #FF4747">LAUNCH CONTROL</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 128px; line-height: 0.9; letter-spacing: -0.045em; color: #FF4747; margin-top: 26px">4200<span style="font-size: 30px; letter-spacing: 0; color: #babab8"> rpm</span></div>
+          <div style="margin-top: 10px; font-family: var(--font-heading); font-weight: 800; font-size: 26px; letter-spacing: 0.14em; color: #fff">ARMED</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #222; font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #babab8">CLUTCH IN · RELEASE TO GO</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">S04</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Traction level changed</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the level segments, at splash scale</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #FF4747; padding-top: 8px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.2em; color: #FF4747">TRACTION CONTROL</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 128px; line-height: 0.9; letter-spacing: -0.045em; color: #FF4747; margin-top: 26px">4</div>
+          <div style="margin-top: 4px; font-family: var(--font-heading); font-weight: 800; font-size: 22px; letter-spacing: 0.14em; color: #babab8">OF 6 · MORE SLIP</div>
+          <div style="margin-top: auto; display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; height: 22px">
+            <div style="background: #FF4747"></div><div style="background: #FF4747"></div><div style="background: #FF4747"></div><div style="background: #FF4747"></div><div style="background: #222"></div><div style="background: #222"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">S05</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">ECU map changed</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the map name comes from the profile</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #FF4747; padding-top: 8px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.2em; color: #FF4747">ECU MAP</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 128px; line-height: 0.9; letter-spacing: -0.045em; color: #FF4747; margin-top: 26px">2</div>
+          <div style="margin-top: 4px; font-family: var(--font-heading); font-weight: 800; font-size: 26px; letter-spacing: 0.12em; color: #fff">E85 · HIGH BOOST</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #222; display: flex; gap: 40px; font-family: 'JetBrains Mono', monospace">
+            <div><div style="font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 5px">BOOST TARGET</div><div style="font-size: 34px; line-height: 1; color: #fff">1.80<span style="font-size: 15px; color: #babab8"> bar</span></div></div>
+            <div><div style="font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 5px">LIMIT</div><div style="font-size: 34px; line-height: 1; color: #fff">7600<span style="font-size: 15px; color: #babab8"> rpm</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">S06</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Refused</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">danger rule · states the condition, holds 1.2 s</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column">
+          <div style="border-top: 2px solid #FF4444; padding-top: 8px">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 12px; letter-spacing: 0.2em; color: #FF4444">LAUNCH CONTROL</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 96px; line-height: 0.9; letter-spacing: -0.045em; color: #FF4444; margin-top: 26px">LOCKED</div>
+          <div style="margin-top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 26px; line-height: 1.4; color: #fff">CAR IS MOVING — 24 km/h</div>
+          <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid #222; font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #babab8">STOP TO ARM</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); margin-top: 30px">
+      <div style="padding: 22px 22px 22px 0; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">WHEN A SPLASH IS EARNED</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">Only a state the driver asked for: engaging, disengaging, changing a level or a map, and a refusal. A value crossing a threshold is a warning on its widget, never a splash.</div>
+      </div>
+      <div style="padding: 22px; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">TIMING</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">800 ms for a change, 1.2 s for a refusal, both cut in and out with no transition. A new change replaces the splash and restarts the timer; splashes never queue. A critical alert preempts a splash immediately.</div>
+      </div>
+      <div style="padding: 22px 0 22px 22px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">WHAT IT NEVER DOES</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">No red field, no pulse, no icon, no progress bar, and it never asks for a tap — the splash is a receipt, not a dialog. The page underneath keeps running and returns untouched.</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); margin-bottom: 14px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--color-accent)">F</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Protection cuts</h2>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">boost · fuel · ignition · knock · overheat · limp</span>
+    </div>
+    <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-700); max-width: 78ch; text-wrap: pretty">A cut is the ECU protecting itself, not something the driver asked for — so it never earns a splash. It gets <strong>the cut band</strong>: a persistent full-width strip directly under the shift light, present for exactly as long as the cut is, naming what is being cut and why. The driver's question is always the same — <em>why is the car down on power?</em> — and the band answers it without hiding the page.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--color-neutral-300); border: 1px solid var(--color-neutral-300); margin-bottom: 34px">
+      <div style="background: var(--color-bg); padding: 24px 26px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 14px">THE BAND — WARNING (CUT IN PROGRESS)</div>
+        <div style="background: #121212; padding: 16px">
+          <div style="border-top: 2px solid #FF8800; padding: 7px 0 0; display: flex; align-items: baseline; gap: 14px">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.16em; color: #FF8800">BOOST CUT</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8">OVERBOOST 1.94 bar · LIMIT 1.80</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8; margin-left: auto">2.4 s</span>
+          </div>
+        </div>
+        <div style="margin-top: 14px; font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">Amber rule, the cut name in Archivo 800, the measured value against the limit in mono, and how long it has been cutting. Flush left, one line, 26 px device tall.</div>
+      </div>
+      <div style="background: var(--color-bg); padding: 24px 26px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 14px">THE BAND — DANGER (HARD CUT)</div>
+        <div style="background: #121212; padding: 16px">
+          <div style="border-top: 2px solid #FF4444; padding: 7px 0 0; display: flex; align-items: baseline; gap: 14px">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.16em; color: #FF4444">FUEL CUT</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #fff">OIL PRESS 1.1 bar · ENGINE PROTECT</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8; margin-left: auto">0.8 s</span>
+          </div>
+        </div>
+        <div style="margin-top: 14px; font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">Danger rule when the cut is protecting the engine rather than a target. The detail turns ink instead of dim so it reads first. Still no takeover — the takeover is the critical alert, and it may follow.</div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 40px">
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">F01</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Boost cut, in situ</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the band + the offending widget in warning</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; height: 14px; flex: none">
+            <div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #fff"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div><div style="background: #222"></div>
+          </div>
+          <div style="border-top: 2px solid #FF8800; padding-top: 7px; display: flex; align-items: baseline; gap: 14px; flex: none">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.16em; color: #FF8800">BOOST CUT</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8">OVERBOOST 1.94 · LIMIT 1.80</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8; margin-left: auto">2.4 s</span>
+          </div>
+          <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+            <div style="grid-column: span 7; border-top: 2px solid #FF8800; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF8800; margin-bottom: 3px">BOOST</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em; color: #FF8800">1.94<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            </div>
+            <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">TARGET</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">1.80<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">RPM</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">6180</div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">THROTTLE</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">100<span style="font-size: 16px; color: #babab8"> %</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">F02</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Knock — ignition retard</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the retard is the value, not the event</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+          <div style="border-top: 2px solid #FF8800; padding-top: 7px; display: flex; align-items: baseline; gap: 14px; flex: none">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.16em; color: #FF8800">IGNITION RETARD</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8">KNOCK CYL 3 · 4 EVENTS</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8; margin-left: auto">HOLDING</span>
+          </div>
+          <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+            <div style="grid-column: span 7; border-top: 2px solid #FF8800; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF8800; margin-bottom: 3px">RETARD</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em; color: #FF8800">−4.5<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> °</span></div>
+            </div>
+            <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">KNOCK</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">4</div>
+            </div>
+            <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">IAT</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">52<span style="font-size: 16px; color: #babab8"> °C</span></div>
+            </div>
+            <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">LAMBDA</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">0.84</div>
+            </div>
+            <div style="grid-column: span 4; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">EGT</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">948<span style="font-size: 16px; color: #babab8"> °C</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">F03</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Fuel cut — engine protect</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">danger band · the critical alert follows in 2 s</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+          <div style="border-top: 2px solid #FF4444; padding-top: 7px; display: flex; align-items: baseline; gap: 14px; flex: none">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.16em; color: #FF4444">FUEL CUT</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #fff">OIL PRESS 1.1 bar · ENGINE PROTECT</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8; margin-left: auto">0.8 s</span>
+          </div>
+          <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+            <div style="grid-column: span 7; border-top: 2px solid #FF4444; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #FF4444; margin-bottom: 3px">OIL PRESS</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em; color: #FF4444">1.1<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            </div>
+            <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">RPM</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">2400</div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">OIL TEMP</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">128<span style="font-size: 16px; color: #babab8"> °C</span></div>
+            </div>
+            <div style="grid-column: span 6; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">WATER</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 34px; line-height: 0.92; color: #fff">104<span style="font-size: 16px; color: #babab8"> °C</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; width: 640px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em">F04</span>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 14px">Limp mode</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--color-neutral-600); margin-left: auto">the cut that does not clear on its own</span>
+        </div>
+        <div style="box-sizing: border-box; width: 640px; height: 480px; background: #121212; border: 1px solid var(--color-neutral-400); padding: 16px; display: flex; flex-direction: column; gap: 12px">
+          <div style="border-top: 2px solid #FF4444; padding-top: 7px; display: flex; align-items: baseline; gap: 14px; flex: none">
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 13px; letter-spacing: 0.16em; color: #FF4444">LIMP MODE</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #fff">ECU FAULT P0299 · UNDERBOOST</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #babab8; margin-left: auto">LATCHED</span>
+          </div>
+          <div style="flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; align-content: start">
+            <div style="grid-column: span 7; border-top: 2px solid #fff; padding: 7px 16px 6px 0">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">RPM LIMIT</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 88px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">3000</div>
+            </div>
+            <div style="grid-column: span 5; border-top: 2px solid #fff; padding: 7px 0 6px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 3px">BOOST</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 64px; line-height: 0.92; letter-spacing: -0.045em; color: #fff">0.0<span style="font-size: 16px; letter-spacing: 0; color: #babab8"> bar</span></div>
+            </div>
+            <div style="grid-column: span 12; border-top: 1px solid #222; padding: 5px 0 4px">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; color: #babab8; margin-bottom: 1px">CLEARS</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 26px; line-height: 1.3; color: #fff">IGNITION OFF, OR CLEAR THE FAULT<br>FROM THE TUNER</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); margin-top: 30px">
+      <div style="padding: 22px 22px 22px 0; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">THE CUT VOCABULARY</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">BOOST CUT, FUEL CUT, IGNITION CUT, IGNITION RETARD, REV LIMIT, TRACTION CUT, PIT LIMIT CUT, OVERHEAT PROTECT, LIMP MODE. One name per cut, taken from the ECU profile, never invented at render time.</div>
+      </div>
+      <div style="padding: 22px; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">AMBER OR RED</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">Amber when the cut is holding a target — overboost, rev limit, traction, pit limit. Red when it is protecting the engine — oil pressure, overheat, limp. The value that caused it takes the same colour on its own widget.</div>
+      </div>
+      <div style="padding: 22px; border-right: 1px solid var(--color-neutral-300)">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">TIMING</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">The band appears within one frame of the cut flag and stays for a 1.5 s minimum, so a 60 ms cut is still readable. The elapsed counter runs while cutting; a latched cut reads LATCHED instead. Two concurrent cuts stack, most severe on top, three maximum.</div>
+      </div>
+      <div style="padding: 22px 0 22px 22px">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--color-neutral-600); margin-bottom: 8px">NOT A SPLASH</div>
+        <div style="font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700)">A cut is not driver-requested, so it never takes the screen and never pulses. If the underlying cause is dangerous, the critical alert follows on its own terms — the band does not become one.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1480,&quot;height&quot;:1100}}"></script>
+</body>
+</html>
