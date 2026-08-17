@@ -1,9 +1,11 @@
-# CANShift — maquettes mobile & dash
+# CANShift — maquettes tuner, mobile & dash
 
 Pour Claude Code, avec les prompts de correction.
 
 | Fichier | Contenu |
 | --- | --- |
+| `CANShift Tuner v2.dc.html` | la maquette de l'app web — coquille à cinq onglets (HOME · DASH · SIGNALS · LIVE · DEVICE), deux thèmes, cliquable |
+| `PROMPT_TUNER_APP.md` | prompt du tuner v2 (spec auto-suffisante : tokens, coquille, les cinq écrans, gestes, stockage, clavier, non-négociables) |
 | `CANShift Dash Pages.dc.html` | les six pages du dash rendues à 2× — la référence visuelle du firmware |
 | `CANShift Mobile.dc.html` | la maquette de l'app mobile — 9 écrans à 390 × 844 |
 | `CANShift States and Alerts.dc.html` | tous les états et alertes des trois produits — 4 niveaux de gravité, 8 états dash, la matrice des commandes, 6 splashscreens, 4 bandeaux de coupure, 6 états tuner, 5 états mobile |
@@ -15,6 +17,9 @@ Pour Claude Code, avec les prompts de correction.
 | `support.js`, `_ds/` | runtime + design system — nécessaires pour ouvrir les `.dc.html` dans un navigateur |
 
 Ouvrir les maquettes directement dans un navigateur, tout le dossier doit rester ensemble.
+
+Le tuner a sa copie du prompt dans `canshift-tuner/docs/design/PROMPT_TUNER_APP.md` — c'est la même,
+et c'est celle que lit Claude Code dans ce dépôt. La maquette ne sert qu'à confirmer les proportions.
 
 Le dash a sa spec contraignante dans le firmware, pas ici : `canshift-firmware/docs/design/DASH_DESIGN_SYSTEM.md`
 (tokens, type, grille, grammaire, motion) et `DASH_PAGES.json` (les six pages en données, en pixels device).
